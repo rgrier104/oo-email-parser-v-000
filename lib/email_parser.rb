@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/[,\s]/).reject(&Lblank)
+    @emails.split(/[,\s]/).reject(&:blank)
   end
 
 end
