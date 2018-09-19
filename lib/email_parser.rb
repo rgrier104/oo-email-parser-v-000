@@ -9,4 +9,9 @@ class EmailParser
     @emails = emails
   end
 
+  def parse
+    self.split(/,\s/  ).uniq
+    self
+  end
+
 end
